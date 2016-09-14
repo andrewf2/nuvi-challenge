@@ -10,6 +10,10 @@
   
   window.app.constant('BaseURL', 'https://nuvi-challenge.herokuapp.com');
   
+  window.app.config(function($locationProvider) {
+  $locationProvider.html5Mode(true);
+});
+  
   window.app.constant('companyColorMap', {
     facebook:"#3b5998",
     twitter:"#11C1FF",
