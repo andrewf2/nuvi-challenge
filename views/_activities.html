@@ -6,7 +6,7 @@
       <th>Full name</th>
       <th>Activity URL</th>
       <th>Like?</th>
-      <th>Comment?</th>
+      <th>View Activity</th>
     </tr>
   </thead>
   <tbody>
@@ -15,7 +15,9 @@
       <td>{{activity.actor_username}}</td>
       <td>{{activity.actor_name}}</td>
       <td><a href = {{activity.activity_url}}>{{activity.activity_url}}</a></td>
-      <td><i class="fa fa-{{provider}}"></i></td>
+      <td><a href = {{activity.activity_url}}><i class="fa fa-{{provider}}"></i></a></td>
+      <td><button class = "btn md" ng-click = "goToActivity(activity.id)">Go To Activity</button></td>
+      
     </tr>
     </table>
     

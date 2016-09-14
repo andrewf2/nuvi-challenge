@@ -4,7 +4,9 @@ function ProviderController($scope,$rootScope,$location,ActivityService,Activity
         ActivityTools.activitiesCallback(activities);
         $scope.activities = ActivityTools.sortedActivities[$scope.provider];
     })
-    
+    $scope.goToActivity = function(id){
+        $location.path('activity/'+id);
+    }
 
     
     

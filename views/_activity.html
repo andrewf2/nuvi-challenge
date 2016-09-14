@@ -1,0 +1,47 @@
+
+<div class="container" style ='background-color:#3D5A70' >
+<div class = "col-md-4 well" style="color:white">
+    <div class = "row col-md-12">
+        <div class = "col-md-2"></div>
+        <img src = {{activity.actor_avator}} class='img-circle col-md-8'>
+        <div class = "col-md-2"></div>
+    </div>
+    <div class = "row col-md-12">
+        <h4>User Name: {{activity.actor_username}}</h4><br>
+        <h4>Actor Name: {{activity.actor_name}}</h4>
+    </div>
+</div>
+<div class = "col-md-4">
+    <div ng-show = "messageType == 'text'">
+        <h2>Post:</h2> <h3>{{activity.activity_message}}</h3>
+    </div>
+    <div ng-show = "messageType == 'img'" >
+        <h2>Post:</h2> <div style = 'border-style: solid'><img src = {{activity.activity_message}} width="345" height="200" ></div>
+        Shares: {{activity.activity_shares}}<br>
+        Likes: {{activity.activity_likes}}<br>
+        Comments: {{activity.activity_comments}}
+    </div>
+      
+</div>
+   </br>
+   </br>
+   </br>
+   
+<div class="row col-md-12">
+  <form>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="3" id="comment" ng-model="response" ></textarea>
+    </div>
+    <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Submit</button>
+  </form>  
+</div>      
+
+
+</div>
+
+
+<div class = "col-md-2"></div>
+<div class = "col-md-2"></div>    
+</div>
+
