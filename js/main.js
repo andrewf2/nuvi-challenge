@@ -11,7 +11,10 @@
   window.app.constant('BaseURL', 'https://nuvi-challenge.herokuapp.com');
   
   window.app.config(function($locationProvider) {
-  $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
 });
   
   window.app.constant('companyColorMap', {
