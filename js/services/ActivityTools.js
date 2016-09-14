@@ -9,7 +9,6 @@ function ActivityTools (){
 		angular.forEach(api.activities,function(activity){
 			api.sortedActivities[activity.provider].push(activity)
 		});
-		
     }
      api.getProviders = function(){
          return Object.keys(api.sortedActivities);
@@ -18,7 +17,6 @@ function ActivityTools (){
         api.activities = activities.data;
 		api.sortByProvider();
      }
-     
      api.getTotalActivities = function(){
          var total = 0;
          angular.forEach(api.sortedActivities,function(provider){
@@ -26,7 +24,5 @@ function ActivityTools (){
          })
      }
      return api;
-    
 }
-
 window.app.service('ActivityTools',ActivityTools);

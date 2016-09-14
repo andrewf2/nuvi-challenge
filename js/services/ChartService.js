@@ -11,7 +11,6 @@ function ChartService(ActivityTools,companyColorMap){
         })
         return {"colors":colors, "activityCount":activityCount}
     }
-    
     api.chartMe = function($scope,ctx,chartType){
         return  new Chart(ctx, {
             type: chartType,
@@ -36,8 +35,6 @@ function ChartService(ActivityTools,companyColorMap){
             }
         });
     }
-
     return api;
 }
-
 window.app.factory('ChartService', ChartService)

@@ -7,16 +7,7 @@
 
   // mount on window for testing
   window.app = angular.module('nuviChallenge',requires);
-  
   window.app.constant('BaseURL', 'https://nuvi-challenge.herokuapp.com');
-  
-  window.app.config(function($locationProvider) {
-    $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
-});
-  
   window.app.constant('companyColorMap', {
     facebook:"#3b5998",
     twitter:"#11C1FF",

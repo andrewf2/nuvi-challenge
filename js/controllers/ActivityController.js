@@ -18,6 +18,7 @@ function ActivityController($scope,$rootScope,$location,ActivityService,Activity
 	$scope.setGraph = function(provider){
 		$scope.activeProvider = provider;
 	}
+	
 	$scope.goToActivities = function(provider){
 		$location.path('/activities/'+ provider)
 	}

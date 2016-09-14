@@ -1,1 +1,1 @@
- 
+For simplicity I eliminated the use of a package manager and a task runner. So all you need to do is have a server running to serve up index.html.

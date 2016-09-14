@@ -7,9 +7,7 @@ function ProviderController($scope,$rootScope,$location,ActivityService,Activity
     $scope.goToActivity = function(id){
         $location.path('activity/'+id);
     }
-
-    
-    
+ 
 }
 
 window.app.controller('ProviderController',ProviderController)
